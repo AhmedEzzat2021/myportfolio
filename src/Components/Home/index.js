@@ -27,23 +27,30 @@ const Home = () => {
           <HashLoader color={"#ffd700"} loading={loading} size={90} />
         </div>
       ) : (
-        <div className="text-zone">
-          <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <img src={logoA} alt="name" />
-            <AnimateLetters letterClass={letterClass} strArray={nameArray} idx={15} />
-            <br />
-            <AnimateLetters letterClass={letterClass} strArray={jobArray} idx={22} />
-          </h1>
-          <h2>Frontend Developer / Javascript Expert</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
-        </div>
+        <>
+          <div className="text-zone">
+            <h1>
+              <span className={letterClass}>H</span>
+              <span className={`${letterClass} _12`}>i,</span>
+              <br />
+              <span className={`${letterClass} _13`}>I</span>
+              <span className={`${letterClass} _14`}>'m</span>
+              <img src={logoA} alt="name" />
+              <AnimateLetters letterClass={letterClass} strArray={nameArray} idx={15} />
+              <br />
+              <AnimateLetters letterClass={letterClass} strArray={jobArray} idx={22} />
+            </h1>
+            <h2>Frontend Developer / Freelancer</h2>
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+          </div>
+          <div className="img__big">
+            <div className="up_effect">
+              <img src={logoA} alt="ImageHome" />
+            </div>
+          </div>
+        </>
       )}
     </div>
   );
