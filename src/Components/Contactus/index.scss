@@ -1,0 +1,234 @@
+.container_contact{
+    opacity: 0;
+    width: calc(100% - 60px);
+    height: 100%;
+    margin-left: 60px;
+    animation: fadeIn 1s forwards;
+    -webkit-animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    padding-left: 8rem;
+    .text-zone{
+        padding-left: 2rem;
+        max-width: 400px;
+    }
+    .title_page{
+        color: #ffd700;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        &::before{
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            margin-top: -40px;
+            opacity: 0.6;
+            display: block;
+            margin-left: -15px;
+            animation: fadeIn 1s 1.5s backwards;
+            -webkit-animation: fadeIn 1s 1.5s backwards;
+}
+        &::after{
+            content: '</h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            animation: fadeIn 1s 1.7s backwards;
+            -webkit-animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+            display: block;
+            margin-left: -15px;
+        }
+    }
+    .text_{
+        font-size: 13px;
+        color: #FFF;
+        font-family: 'Arial';
+        font-weight: 300;
+        animation: pulse 1s;
+        -webkit-animation: pulse 1s;
+        line-height: 1.5;
+        margin-bottom: 2.5rem;
+    }
+    
+    .content_contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cont_inputs{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            .inline_inp{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                gap: 10px;
+            }
+            input,textarea{
+                width: 100%;
+                background-color: #115173;
+                padding: 10px 0px 10px 10px ;
+                border: none;
+                margin-bottom: 10px;
+                transition: all .7s ease;
+                -webkit-transition: all .7s ease;
+                -moz-transition: all .7s ease;
+                -ms-transition: all .7s ease;
+                -o-transition: all .7s ease;
+                outline: none;
+                border: 1px solid transparent;
+                color: #ffd700;
+                font-size: 14px;
+                box-sizing: border-box;
+                resize: none;
+                font-family: 'Arial';
+            }
+            input:focus,textarea:focus{
+                border-color: #ffd700;
+            }
+            input::placeholder,textarea::placeholder{
+                color: #ffd700;
+                font-size: 14px;
+                font-family: 'Arial';
+                opacity: .8;
+                transition: all .4s ease;
+                -webkit-transition: all .4s ease;
+                -moz-transition: all .4s ease;
+                -ms-transition: all .4s ease;
+                -o-transition: all .4s ease;
+            }
+            input:focus::placeholder,textarea:focus::placeholder{
+                opacity: 0;
+            }
+            .btn_send{
+                width: 20%;
+                padding: 1rem;
+                background-color: #115173;
+                color: #FFF;
+                border: 1px solid transparent;
+                outline: none;
+                font-weight: 700;
+                font-size: 15px;
+                cursor: pointer;
+                transition: all .4s ease;
+                -webkit-transition: all .4s ease;
+                -moz-transition: all .4s ease;
+                -ms-transition: all .4s ease;
+                -o-transition: all .4s ease;
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: -100%;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #ffd700;
+                        transition: all .4s ease;
+                    -webkit-transition: all .4s ease;
+                    -moz-transition: all .4s ease;
+                    -ms-transition: all .4s ease;
+                    -o-transition: all .4s ease;
+                    z-index: -1;
+                    }
+                    &:hover{
+                        border-color:#ffd700;
+                        color: #ffd700;
+                    }
+                    &:hover::before{
+                        left: 100%;
+                    }
+            }
+        }
+       
+        
+    }
+}
+.loaderStyle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #022c43;
+    z-index: 999999999;
+    position: absolute;
+    left: 0%;
+    top: 0;
+}
+.anim_3{
+    animation: fadeInUp 1s 1s;
+    -webkit-animation: fadeInUp 1s ;
+    animation-delay: 1.3;
+}
+.anim_4{
+    animation: fadeInUp 1s 1s;
+    -webkit-animation: fadeInUp 1s ;
+    animation-delay: 1.4;
+}
+.anim_5{
+    animation: fadeInUp 1s 1s;
+    -webkit-animation: fadeInUp 1s;
+    animation-delay: 1.5;
+}
+.up_all_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+.map_{
+    height: 100%;
+    position: relative;
+    .info_map{
+        position: absolute;
+        background: #000;
+        top: 50px;
+        right: 30%;
+        z-index: 9999;
+        width: 267px;
+        padding: 20px;
+        color: #fff;
+        font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        opacity: 0;
+        animation: fadeIn 1s 1.5s;
+        -webkit-animation: fadeIn 1s 1.5s;
+        animation-fill-mode: forwards;
+        line-height: 2;
+        span{
+            color: #ffd700;
+        }
+}
+    .leaflet-container{
+        animation: backInRight 1s 1.2s;
+        -webkit-animation: backInRight 1s 1.2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        width: 100%;
+
+    }
+}
+.info_map{
+        position: absolute;
+        background: #115173;
+        top: 50px;
+        right: 30%;
+        z-index: 999999;
+        width: 267px;
+        padding: 20px;
+        color: #fff;
+        font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        opacity: 0;
+    }
