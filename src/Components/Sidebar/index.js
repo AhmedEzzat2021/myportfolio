@@ -1,4 +1,4 @@
-import { faEnvelope, faGear, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faEye, faGear, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -21,6 +21,10 @@ const Sidebar = () => (
 
       <NavLink exact="true" className="link_skills" to="/skills">
         <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
+      </NavLink>
+
+      <NavLink exact="true" className="link_projects" to="/projects">
+        <FontAwesomeIcon icon={faEye} color="#4d4d4e" />
       </NavLink>
 
       <NavLink exact="true" className="link_contact" to="/contact">
