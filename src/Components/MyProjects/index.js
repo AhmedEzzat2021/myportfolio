@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineEye } from "react-icons/ai";
+import HashLoader from "react-spinners/HashLoader";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -7,6 +8,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./index.scss";
+
 // images ==================================
 import crud from "../../assets/imageProjects/crud.png";
 import dashboard from "../../assets/imageProjects/dashboard.png";
@@ -18,6 +20,14 @@ import ultimate from "../../assets/imageProjects/ultimate.jpg";
 import utu from "../../assets/imageProjects/utu.png";
 
 export const Projects = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
   const myDataSlider = [
     {
       id: 1,
@@ -78,40 +88,46 @@ export const Projects = () => {
   ];
   return (
     <div className="container_proj">
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[Autoplay, EffectCoverflow, Pagination]}
-        className="mySwiper"
-      >
-        {myDataSlider.map(ele => {
-          return (
-            <SwiperSlide key={ele.id}>
-              <img src={ele.image} alt={ele.title} />
-              <p>
-                website {ele.title} build by <br /> <span>{ele.description}</span>
-              </p>
-              <a href={ele.linkSite} target="_blank" rel="noreferrer">
-                Live demo <AiOutlineEye style={{ marginLeft: "5px" }} />
-              </a>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+      {loading ? (
+        <div className="loaderStyle">
+          <HashLoader color={"#ffd700"} loading={loading} size={90} />
+        </div>
+      ) : (
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[Autoplay, EffectCoverflow, Pagination]}
+          className="mySwiper"
+        >
+          {myDataSlider.map(ele => {
+            return (
+              <SwiperSlide key={ele.id}>
+                <img src={ele.image} alt={ele.title} />
+                <p>
+                  website {ele.title} build by <br /> <span>{ele.description}</span>
+                </p>
+                <a href={ele.linkSite} target="_blank" rel="noreferrer">
+                  Live demo <AiOutlineEye style={{ marginLeft: "5px" }} />
+                </a>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      )}
     </div>
   );
 };
