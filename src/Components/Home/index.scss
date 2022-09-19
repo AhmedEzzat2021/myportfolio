@@ -225,3 +225,48 @@ h2{
         -moz-box-shadow: 0px 0px 130px 0px rgba(72,155,255,0.5) inset;
 }
 }
+
+
+
+// Media query ===========================
+.burg_menu{
+    padding-right: .5rem;
+}
+.show-nav{
+    transform: translateX(-100%)!important;
+    -webkit-transform: translateX(-100%)!important;
+    -moz-transform: translateX(-100%)!important;
+    -ms-transform: translateX(-100%)!important;
+    -o-transform: translateX(-100%)!important;
+}
+
+.burg_menu svg{
+    color: #FFF;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    &:hover{
+        border-color: #489bff;
+    }
+}
+@media (max-width: 991.98px) { 
+    .img__big{
+        display: none;
+    }
+    .home-page .text-zone{
+        width: 100%;
+        max-height: 90%;
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

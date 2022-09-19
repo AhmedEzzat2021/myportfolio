@@ -46,6 +46,14 @@ const About = () => {
                 If I need to define myself in one sentence that would be a family person, a sports fanatic, and
                 tech-obsessed.
               </p>
+
+              <a
+                target="_blank"
+                href="https://AhmedEzzat2021.github.io/myportfolio/assets/AhmedEzzat.pdf"
+                rel="noreferrer"
+              >
+                link
+              </a>
             </div>
           </div>
           <div className="box_animation">

@@ -2,7 +2,7 @@
     background-color: #181818;
     width: 60px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
@@ -161,3 +161,73 @@ nav .active svg{
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
 }
+
+
+
+// Media query ===========================
+.burg_menu{
+    display: none;
+    padding-right: .5rem;
+}
+.show-nav{
+    transform: translateX(-100%)!important;
+    -webkit-transform: translateX(-100%)!important;
+    -moz-transform: translateX(-100%)!important;
+    -ms-transform: translateX(-100%)!important;
+    -o-transform: translateX(-100%)!important;
+}
+
+.burg_menu svg{
+    color: #FFF;
+    font-size: 30px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: .4s;
+    display: inline-block;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    &:hover{
+        border-color: #489bff;
+    }
+}
+@media (max-width: 991.98px) { 
+    .burg_menu{
+        display: block;
+    }
+    .nav-bar{
+        top: 0;
+        width: 100%;
+        height: 60px;
+        min-height: 50px;
+        flex-direction: row;
+        position: relative;
+        ul{
+            display: flex;
+            gap: 25px;
+        }
+    }
+    .nav-bar nav{
+        flex-direction: row;
+        width: 100%;
+        position: absolute;
+        bottom: -60px;
+        background-color: #181818;
+        height: 60px;
+        right: -100%;
+        transform: translateX(100%);
+        transition: .4s;
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+   
+    .nav-bar ul li{
+        margin-bottom: 0;
+    }
+    .nav-bar .logo img{
+        width: 45px;
+    }
+ }
