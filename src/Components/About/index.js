@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { DiJavascript1 } from "react-icons/di";
 import { FaBootstrap, FaCss3, FaGithub, FaHtml5, FaReact } from "react-icons/fa";
 import HashLoader from "react-spinners/HashLoader";
-import Resume from "../../assets/AhmedEzzat.pdf";
 import AnimateLetters from "../AnimatedLetters";
 import "./index.scss";
 const About = () => {
@@ -45,9 +44,6 @@ const About = () => {
                 If I need to define myself in one sentence that would be a family person, a sports fanatic, and
                 tech-obsessed.
               </p>
-              <a href={Resume} download="AhmedEzzat.pdf">
-                <button>Download Rusume</button>
-              </a>
             </div>
           </div>
           <div className="box_animation">
