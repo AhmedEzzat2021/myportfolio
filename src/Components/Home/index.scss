@@ -141,8 +141,8 @@ h2{
         animation-fill-mode: forwards;
         opacity: 0;
         .up_effect{
-            width: 500px;
-            height: 500px;
+            width: 370px;
+            height: 400px;
             position: relative;
             background-color: #1c1c1c;
             border-radius: 8px;
@@ -187,7 +187,7 @@ h2{
                 -moz-border-radius: 8px;
                 -ms-border-radius: 8px;
                 -o-border-radius: 8px;
-                inset: 2px;
+                inset: 1.5px;
                 animation: shadowImg 5s ease-in infinite;
                 -webkit-animation: shadowImg 5s ease-in infinite alternate;
             }
@@ -269,4 +269,13 @@ h2{
         justify-content: center;
         align-items: center;
     }
+}
+.overlay{
+    position: absolute;
+    background: linear-gradient(0deg,#0c0f14,transparent);
+    width: 99%;
+    height: 99%;
+    bottom: 0;
+    left:0%;
+    z-index: 5;
 }

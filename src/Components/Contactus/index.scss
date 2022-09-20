@@ -232,3 +232,40 @@
         font-weight: 300;
         opacity: 0;
     }
+// Media query ===========================
+
+    @media (max-width: 991.98px) { 
+        .container_contact{
+            width: 100%;
+            margin: 0;
+            padding-left: 0;
+            .content_contact{
+                flex-direction: column;
+            }
+        }
+        .up_all_left{
+            width: 100%;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+        }
+        
+        .container_contact .content_contact .cont_inputs .inline_inp{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+        }
+        .container_contact .content_contact .cont_inputs{
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+        .container_contact .text_{
+            text-align: center;
+        }
+        .map_ .leaflet-container{
+            height: 70%;
+            margin-bottom: 10rem;
+        }
+    }

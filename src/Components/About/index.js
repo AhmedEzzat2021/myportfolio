@@ -46,7 +46,7 @@ const About = () => {
                 tech-obsessed.
               </p>
               <a href={Resume} download="AhmedEzzat.pdf" className="flat-button">
-                Download Rusume
+                Download Resume
               </a>
             </div>
           </div>

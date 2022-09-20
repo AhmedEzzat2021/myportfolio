@@ -86,12 +86,14 @@ const ContactUs = () => {
                   <Popup>Hello I'm, Ahmed Ezzat and I lives here!</Popup>
                 </Marker>
               </MapContainer>
-              <div class="info_map">
+              <div className="info_map">
                 Ahmed Ezzat,
                 <br />
                 Egypt,
                 <br />
                 Al Qalyubia Toukh, <br />
+                <span>+201014246087</span>
+                <br />
                 <span>ahmedezat20900@gmail.com</span>
               </div>
             </div>
