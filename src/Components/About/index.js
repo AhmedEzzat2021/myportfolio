@@ -45,8 +45,8 @@ const About = () => {
                 If I need to define myself in one sentence that would be a family person, a sports fanatic, and
                 tech-obsessed.
               </p>
-              <a href={Resume} download="AhmedEzzat.pdf">
-                <button>Download Rusume</button>
+              <a href={Resume} download="AhmedEzzat.pdf" className="flat-button">
+                Download Rusume
               </a>
             </div>
           </div>
