@@ -51,8 +51,18 @@ const About = () => {
                 target="_blank"
                 href="https://AhmedEzzat2021.github.io/myportfolio/assets/AhmedEzzat.pdf"
                 rel="noreferrer"
+                // rel="noreferrer"
+                // // rel="noreferrer"
               >
                 link
+              </a>
+
+              <a
+                target="_blank"
+                href="https://bobangajicsm.github.io/portfolio/assets/slobodan-gajic-cv.pdf"
+                rel="noreferrer"
+              >
+                Download CV
               </a>
             </div>
           </div>
