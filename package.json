@@ -1,5 +1,5 @@
 {
-  "homepage":"http://AhmedEzzat2021.github.io/myportfolio/",
+  "homepage": "http://AhmedEzzat2021.github.io/myportfolio/",
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "gsap-trial": "^3.11.1",
+    "jspdf": "^2.5.1",
     "loaders.css": "^0.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -24,11 +25,12 @@
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.4",
     "sass": "^1.54.8",
+    "swiper": "^8.4.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
